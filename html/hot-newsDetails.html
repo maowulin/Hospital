@@ -1,0 +1,9 @@
+<div ng-controller="hotnewsDetailsCtrl" class="text_all">
+	<h1 class="title" ng-bind="newsdetail.title" ></h1>
+	<p class="time" ng-bind="newsdetail.date"></p>
+	<i>
+		<img ng-src="{{newsdetail.imgUrl}}">
+	</i>
+	<p class="content" ng-bind="newsdetail.content"></p>
+	<a ng-href="#/index" id="back">返回</a>
+</div>

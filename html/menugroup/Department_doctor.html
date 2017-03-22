@@ -1,0 +1,33 @@
+<div class="department_doctor">
+	<input type="text" placeholder="快速搜索科室、医生或者护士" ng-model="search" />
+	<div class="choose">
+		<div class="choose_head">
+			<span class="curr">临床科室</span>
+			<span>医生</span>
+			<span>护士</span>
+		</div>
+		
+		<ul class="choose_content show">
+			<li ng-repeat="i in departmentdoctors | filter:search | orderBy:'name'" id="{{i.id}}">
+				<a ng-href="#/departmentdoctorDetail/{{i.id}}" ng-bind="i.name">		
+				</a>
+			</li>
+		</ul>
+		
+		<ul class="choose_content">
+			<li ng-repeat="i in doctors | filter:search | orderBy:'name'" id="{{i.id}}">
+				<a href="#/doctors/{{i.id}}" ng-bind="i.name">	
+				</a>
+			</li>
+		</ul>
+		
+		<ul class="choose_content">
+			<li ng-repeat="i in nurses | filter:search | orderBy:'name'" id="{{i.id}}">
+				<a ng-href="#/nurses/{{i.id}}" ng-bind="i.name" >
+				</a>
+			</li>
+			
+		</ul>
+	</div>
+	<a ng-href="#/index" id="back">返回</a>
+</div>

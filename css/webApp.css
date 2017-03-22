@@ -1,0 +1,158 @@
+body{
+	background-color:#f3f3f3;
+	font-family: "微软雅黑";
+}
+#owl-demo .item p{
+	position:absolute;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	background-color:rgba(0,0,0,0.5);
+	color:#fff;
+	line-height: 42px;
+	padding:0px 120px 0px 10px;
+	white-space:nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+#menu{
+	width:100%;
+	overflow: hidden;
+}
+/*bannerdetail页面的css*/
+.text_all{
+	width:100%;
+	overflow: hidden;
+}
+.text_all .title{
+	width:100%;
+	box-sizing: border-box;
+	padding:20px 5px 5px 5px;
+}
+.text_all .time{
+	text-align: right;
+	font-size:12px;
+	margin-right:5%;
+}
+.text_all i{
+	display: block;
+	width:100%;
+	overflow: hidden;
+	margin:5% 0px;
+}
+.text_all i img{
+	width:100%;
+}	
+.text_all .content{
+	width:100%;
+	font-size:20px;
+	text-indent:2em;
+	box-sizing: border-box;
+	padding:0px 3%;
+}
+#back{
+	position: fixed;
+	bottom:5px;
+	right:10px;
+	line-height:30px;
+	height: 30px;
+	width:50px;
+	font-size:18px;
+	text-align: center;
+	border:1px dashed #333;
+	border-radius:5px;
+}
+.menu{
+	margin-top:5%;
+	width:100%;
+	overflow: hidden;
+}
+.menu ul{
+	width:100%;
+}
+.menu ul li{
+	overflow: hidden;
+	float:left;
+	width:25%;
+}
+.menu ul li a{
+	width:100%;
+	display: inline-block;
+	text-align: center;
+	box-sizing:border-box;
+	padding:3% 0;
+}
+.menu ul li a span{
+	width:100%;
+	display: inline-block;
+	
+}
+.menu ul li a span img{
+	width:80%;
+}
+/*hotnews模块CSS*/
+.hotnews{
+	width:96%;
+	margin:2% auto;
+	background-color:#fff;
+	border-radius:5px;
+	border:1px solid #ccc;
+}
+.hotnews dt,.hotnews dd{
+	width:100%;
+}
+.hotnews dt{
+	height:40px;
+	line-height:40px;
+	
+}
+.hotnews dt h4{
+	margin-left:15px;
+	float:left;
+}
+.hotnews dt a{
+	float:right;
+	margin-right:15px;
+	font-size:16px;
+}
+.hotnews dt a i{
+	float:left;
+	display: inline-block;
+}
+.hotnews dt a img{
+	float:left;
+	display: inline-block;
+	width:20px;
+	margin:10px 5px 0px 5px;
+}
+.hotnews dd a{
+	position: relative;
+	display: block;
+	width:100%;
+	height:80px;
+	box-sizing: border-box;
+	padding:3%;
+	overflow: hidden;
+	border-top:1px solid #ccc;
+}
+.hotnews dd a b{
+	/*display: block;*/
+	padding-right:91px;
+	float:left;
+	font-size:14px;
+	font-weight:500;
+	color:#222;
+}
+.hotnews dd a em{
+	position: absolute;
+	top:10px;
+	right:10px;
+	float:right;
+	padding-bottom:5px;
+	box-sizing: border-box;
+	width:90px;
+	overflow: hidden;
+}
+.hotnews dd a em img{
+	width:100%;
+}

@@ -1,0 +1,15 @@
+<div ng-controller="hotnewsCtrl" class="hotnews">
+	<dt>
+        <h4>新闻动态</h4>
+        <a href="javascript:void(0)" class="refresh" ng-click="refresh()"><img src="img/icon/icon_refresh.png"><i>刷新</i></a>
+    </dt>
+    <dd>
+    	<a ng-href="#/hot-newsDetails/{{i.id}}" ng-repeat="i in hotnews">
+    		<b ng-bind="i.title"></b>
+    		<i ng-bind="i.date"></i>
+    		<em>
+    			<img ng-src="{{i.imgUrl}}"
+    		</em>
+    	</a>
+    </dd>
+</div>

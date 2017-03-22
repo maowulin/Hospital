@@ -1,0 +1,9 @@
+<div ng-controller="bannerDetailsCtrl" class="text_all">
+	<h1 class="title" ng-bind="detail.title" ></h1>
+	<p class="time" ng-bind="detail.date"></p>
+	<i>
+		<img ng-src="{{detail.imgUrl}}">
+	</i>
+	<p class="content" ng-bind="detail.content"></p>
+	<a ng-href="#/index" id="back">返回</a>
+</div>

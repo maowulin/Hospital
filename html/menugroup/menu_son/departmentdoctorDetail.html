@@ -1,0 +1,18 @@
+<div class="departmentDetail">
+	<h3>科室简绍:<span ng-bind="DedoctorNow.name"></span></h3>
+    <p class="text" ng-bind="DedoctorNow.text"></p>	
+	<a href="javascript:void(0)" ng-click="showMore()" class="more">查看更多</a>
+	<h3>科室主治医生</h3>
+	<ul class="doctor_lists">
+		<li ng-repeat="i in arrSdocs">
+			<a href="#/doctors/{{i.id}}">
+				<em><img ng-src="{{i.img}}"/></em>
+				<div>
+					<i>主</i><span ng-bind="i.name"></span>
+					<p>主治：<span ng-bind="i.keshe"></span></p>
+				</div>
+			</a>
+		</li>
+	</ul>
+	<a ng-href="#/departmentdoctor" id="back">返回</a>
+</div>

@@ -1,0 +1,55 @@
+<div class="doctors">
+	<h3>医师主页</h3>
+	<div class="doctors_now">
+		<em><img ng-src="{{doctorNow.img}}"/></em>
+		<div>
+			<i>主</i><span ng-bind="doctorNow.name"></span>
+			<p>主治：<span ng-bind="doctorNow.keshe"></span></p>
+		</div>
+	</div>
+	<div class="doctors">
+		<h3>
+			<i></i>
+			<span>排班信息</span>
+			<em></em>
+		</h3>
+		<table>
+			<thead>
+				<tr>
+					<th>时间</th>
+					<th>周一</th>
+					<th>周二</th>
+					<th>周三</th>
+					<th>周四</th>
+					<th>周五</th>
+					<th>周六</th>
+					<th>周天</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>上午</td>
+					<td></td>
+					<td><a href="javascript:void(0)" class="appoint">约</a></td>
+					<td><a href="javascript:void(0)" class="enough">满</a></td>
+					<td></td>
+					<td><a href="javascript:void(0)" class="appoint">约</a></td>
+					<td></td>
+					<td><a href="javascript:void(0)" class="enough">满</a></td>
+				</tr>
+				<tr>
+					<td>下午</td>
+					<td></td>
+					<td><a href="javascript:void(0)" class="appoint">约</a></td>
+					<td></td>
+					<td><a href="javascript:void(0)" class="appoint">约</a></td>
+					<td><a href="javascript:void(0)" class="enough">满</a></td>
+					<td><a href="javascript:void(0)" class="appoint">约</a></td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+		
+	</div>
+	<a ng-href="#/departmentdoctor" id="back">返回</a>
+</div>

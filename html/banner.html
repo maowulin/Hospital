@@ -1,0 +1,7 @@
+<div id="owl-demo" class="owl-carousel" ng-controller="bannerCtrl">
+    <a ng-href="#/bannerDetail/{{i.id}}" class="item" ng-repeat="i in banners">
+    	<img class="lazyOwl" ng-src="{{i.imgUrl}}" alt="">
+    	<p ng-bind="i.title"></p>
+    </a>
+   	
+</div>

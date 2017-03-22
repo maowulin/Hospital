@@ -1,0 +1,13 @@
+<div class="menu" ng-controller="menuCtrl" ng-show="menus.length">
+    <ul>
+        <li ng-repeat="menu in menus">
+            <a href="{{menu.url}}">
+                    <span>
+                        <img ng-src="{{menu.imgUrl}}">
+                    </span>
+                <h6 ng-bind="menu.title"></h6>
+            </a>
+        </li>
+    </ul>
+ 
+</div>

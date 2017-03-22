@@ -1,0 +1,11 @@
+<div class='hospitalDynamic' ng-controller="DynamicCtrl">
+	<ul>
+		<li ng-repeat="i in Dynamics">
+			<a ng-href="#/HDynamicDetails/{{i.id}}">
+				<p class="title" ng-bind="i.title">
+				<p class="text" ng-bind="i.text"></p>			
+			</a>
+		</li>
+	</ul>
+	<a ng-href="#/index" id="back">返回</a>
+</div>
